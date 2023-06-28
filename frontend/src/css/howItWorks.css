@@ -49,7 +49,7 @@
 
     color: rgba(11, 70, 45, 0.9);
 }
-@media(max-width:1000px){
+@media(max-width:1024px){
   .mission .steps{
         
         background-image: url('/how it works vertical.png');

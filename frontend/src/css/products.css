@@ -54,7 +54,6 @@
 }
 
 .prod-desc {
-    margin-left: 2rem;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -83,6 +82,7 @@
     }
     .prod-desc{
         font-size: 14px;
+        line-height: 20px;
 
     }
 }
