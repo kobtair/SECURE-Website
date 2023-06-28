@@ -1,0 +1,108 @@
+.hero{
+    width: 100%;
+}
+.hero-title{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 98%;
+    letter-spacing: 0.045em;
+
+    color: #343232;
+    /* or 49px */
+
+}
+.typing{
+    color:#8CB561
+}
+
+.hero-img {
+    margin-top: 100px;
+    width: 430px;
+    height: 390px;
+}
+
+
+
+.para {
+   
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 154.5%;
+    /* or 31px */
+
+    letter-spacing: 0.09em;
+
+    color: rgba(0, 0, 0, 0.64);
+
+}
+
+.buttons {
+    margin-top: 5rem;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 15px;
+
+
+
+    color: #FFFFFF;
+
+}
+
+.buttons .main {
+    background: #8CB561;
+    border-radius: 7px;
+    padding-inline: 35px;
+    padding-block: 16px;
+
+}
+
+.buttons .ghost {
+    border: #8CB561 solid 2px;
+    padding-inline: 26px;
+    padding-block: 15px;
+    margin-left: 37px;
+    color: #8CB561;
+    border: 1px solid #8CB561;
+    border-radius: 7px;
+
+
+}
+
+.buttons .main:hover {
+    background-color: #759751;
+
+
+}
+
+.ghost:hover {
+    background-color: whitesmoke;
+}
+
+@media(max-width:1329px){
+.hero-title{
+    font-size: 33px;
+}
+.para{
+    font-size: 14px;
+}
+.buttons{
+    font-size: 12px;
+    font-weight: 300px;
+    margin-top: 4rem;
+}
+.hero-img{
+    width: 300px;
+    height: 270px;
+
+}
+.hero{
+    padding-inline: 0;
+}
+
+}

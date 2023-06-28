@@ -1,0 +1,88 @@
+.products {
+    margin-top: 9rem;
+    height: auto;
+    width: 100%;
+
+}
+
+.products-title {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 63px;
+    line-height: 63px;
+    color: #343232;
+
+}
+
+.products-big {
+    margin-left: 15px;
+    color: #8CB561;
+}
+
+.product {
+    padding-block: 10px;
+    margin-top: 5rem;
+    height: 32em;
+    width: 32em;
+    border-radius: 0px;
+    background: #F5F5F5;
+    box-shadow: 5px 10px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 29px;
+    cursor: pointer;
+}
+
+.image {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.product-name {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 63px;
+    /* identical to box height, or 197% */
+
+
+    color: #393939;
+}
+
+.prod-desc {
+    margin-left: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 28px;
+    /* or 187% */
+
+    letter-spacing: 0.055em;
+
+    color: #636060;
+
+}
+
+@media(max-width:1000px){
+    .product{
+        height: 27em;
+        width:18em
+    }
+    .products-title{
+        font-size: 40px;
+    }
+    .product-name{
+        font-size: 20px;
+        line-height: 30px;
+
+    }
+    .prod-desc{
+        font-size: 14px;
+
+    }
+}

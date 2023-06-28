@@ -1,0 +1,30 @@
+.real-mission {
+    margin-top: 9rem;
+    height: auto;
+    width: 100%;
+
+    
+}
+.mission-title{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 63px;
+    line-height: 63px;
+    color: #343232;
+}
+.big{
+    margin-left: 15px;
+    color: #8CB561;
+
+}
+.video{
+    height: 35vw;
+    width: 62.2vw;
+}
+@media(max-width:1000px)
+{
+    .mission-title{
+        font-size: 40px;
+    }
+}

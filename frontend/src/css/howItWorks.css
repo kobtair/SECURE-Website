@@ -1,0 +1,65 @@
+.mission {
+    margin-top: 9rem;
+    width: 100%;
+    height: auto;
+
+}
+
+.mission .title {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 63px;
+    line-height: 63px;
+    color: #343232;
+    white-space: nowrap;
+
+}
+
+.mission .works {
+    color: #8CB561;
+    margin-left: 15px;
+
+}
+.mission .steps {
+    background-image: url('/how it works.png');
+    background-size: cover;
+    background-repeat:   no-repeat;
+    height: 300.34px;
+    width: 1000px;
+    padding-top: 5px;
+
+}
+
+.step-2{
+    position: relative;
+    right: 80px;
+    bottom: 150px;
+}
+
+.steps-text {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 154.5%;
+    /* or 49px */
+
+    letter-spacing: 0.09em;
+
+    color: rgba(11, 70, 45, 0.9);
+}
+@media(max-width:1000px){
+  .mission .steps{
+        
+        background-image: url('/how it works vertical.png');
+        height: 800px;
+        width: 250px;
+    }
+    .mission .title {
+        font-size: 40px;
+    }
+    .steps-text{
+        font-size: 16px;
+    }
+}

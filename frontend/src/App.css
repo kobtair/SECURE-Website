@@ -1,0 +1,6 @@
+.wrapper{
+    padding-inline: 140px;
+    display:flex;
+    flex-direction: column;
+    gap: 75px;
+}

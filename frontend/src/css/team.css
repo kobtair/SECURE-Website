@@ -1,0 +1,28 @@
+.team{
+    margin-top: 9rem;
+    padding-inline:140px;
+    height: auto;
+    width: 100%;
+}
+.team-members{
+    margin-top: 100px;
+    height: 370px;
+    width: 290px;
+    border-radius: 0px;
+    background: white;
+    box-shadow: 5px 10px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 29px;
+}
+.team-role{
+    font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 28px;
+row-gap: -10px  ;
+/* identical to box height, or 187% */
+
+letter-spacing: 0.055em;
+
+color: #636060;
+}

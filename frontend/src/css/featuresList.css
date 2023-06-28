@@ -1,0 +1,42 @@
+.features{
+    margin-top: 9rem;
+    padding-inline: 11vw;
+    width: 100%;
+}
+
+.feature{
+    margin-top: 100px;
+    height: 300px;
+    width: 300px;
+    border-radius: 0px;
+    background: white;
+    box-shadow: 5px 10px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 29px;
+}
+.name{
+    font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 63px;
+/* or 315% */
+
+
+color: #393939;
+}
+.clip{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    max-width: 100%;
+    max-height: 100%;
+}
+@media(max-width:800px){
+    .feature{
+        height: 200px;
+        width: 200px;
+    }
+    .name{
+        font-size: 15px;
+    }
+}
