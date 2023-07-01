@@ -12,8 +12,8 @@ export default function Products() {
         <div className=' h-2/3 w-11/12'>
           <img className='image' src="product.png" alt="product" />
         </div>
-        <div className='ml-6 product-name'>Accident Detection System</div>
-        <div className="prod-desc ml-6">This small device uses AI and Machine Learning to detect when you are in an 
+        <div className='ml-12 mb-2 lg:ml-16 product-name '>Accident Detection System</div>
+        <div className="prod-desc lg:ml-6 text-center">This small device uses AI and Machine Learning to detect when you are in an 
           accident and sets a timer and then alerts the Emergency services about the 
           accident so, critical lives can be saved</div>
 

@@ -1,28 +1,20 @@
 
 import './App.css'
 import NavBar from './components/NavBar'
-import HeroSection from './components/HeroSection'
-import HowItWorks from './components/HowItWorks'
-import Mission from './components/Mission'
-import Products from './components/Products'
-import FeaturesList from './components/FeaturesList'
-import Team from './components/Team'
-import FAQS from './components/FAQS'
-import Footer from './components/Footer'
+import {Routes, Route} from 'react-router-dom'
+import Home from './pages/Home'
+import NotFound from './pages/NotFound'
+
 
 function App() {
   return (
-    <div className='flex flex-col items-center '>
+    <>
       <NavBar />
-      <HeroSection />
-      <HowItWorks />
-      <Mission />
-      <Products />
-      <FeaturesList />
-      <Team />
-      <FAQS/>
-      <Footer/>
-    </div>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='*' element={<NotFound />} />
+      </Routes>
+      </>
 
   )
 }

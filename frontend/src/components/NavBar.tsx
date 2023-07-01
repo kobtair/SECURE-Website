@@ -1,20 +1,22 @@
 import { useState } from 'react';
+import {NavLink} from 'react-router-dom';
 import {
     Drawer, ListItem,
     ListItemText,
     Button,
 } from '@mui/material'
+import { Close} from '@mui/icons-material/';
 import '../css/navbar.css'
 
 const data = [
     {
         name: "Home"
-        ,
+        ,link:"/"
     },
-    { name: "Products" },
-    { name: "Blogs" },
-    { name: "Careers" },
-    { name: "About Us" },
+    { name: "Products", link:"/products" },
+    { name: "Blogs" , link:"/blogs"},
+    { name: "Careers", link:"/careers" },
+    { name: "About Us", link:"/about" },
 ];
 
 export default function NavBar() {
@@ -22,7 +24,9 @@ export default function NavBar() {
 
     const getList = () => (
         <div style={{ width: 250, paddingTop:'50px', display:'flex', flexDirection:'column', alignItems:'center' }} onClick={() => setOpen(false)}>
+            <Close className=' self-end mr-11' />
             {data.map((item, index) => (
+                <NavLink to={item.link}>
                 <ListItem key={index}>
                     <ListItemText style={{
                         fontFamily: 'Inter, sans-serif',
@@ -31,11 +35,10 @@ export default function NavBar() {
                         fontSize: '15px',
                         lineHeight: '15px',
                         whiteSpace: 'nowrap',
-                        marginLeft: '63px',
                         color: 'rgba(11, 70, 45, 0.9)',
                         cursor: 'pointer',
                     }} primary={item.name} />
-                </ListItem>
+                </ListItem></NavLink>
 
             ))}
             <Button style={{
@@ -70,32 +73,38 @@ export default function NavBar() {
                 </Drawer>
             </div>
 
-            <img alt='Logo' src='/SECURE Logo.png' className='logo' />
+            <NavLink to={'/'}><img alt='Logo' src='/SECURE Logo.png' className='logo' /></NavLink>
             <ul >
-                <li><a href="">
-                    Home</a>
+                <li> <NavLink style={({isActive})=>{
+                   return isActive ? {color:'#8CB561'}:{}
+                }} to={'/'}>Home</NavLink>
                 </li>
                 <li>
-                    <a href="">
-                        Products</a>
+                <NavLink style={({isActive})=>{
+                   return isActive ? {color:'#8CB561'}:{}
+                }} to={'/products'}>Products</NavLink>
                 </li>
                 <li>
-                    <a href="">
-                        Blogs</a>
+                    <NavLink style={({isActive})=>{
+                   return isActive ? {color:'#8CB561'}:{}
+                }} to={'/blogs'}>Blogs</NavLink>
                 </li>
                 <li>
-                    <a href="">
-                        Careers</a>
+                <NavLink style={({isActive})=>{
+                   return isActive ? {color:'#8CB561'}:{}
+                }} to={'/careers'}>Careers</NavLink>
                 </li>
 
                 <li>
-                    <a href="">
-                        About Us</a>
+                <NavLink style={({isActive})=>{
+                   return isActive ? {color:'#8CB561'}:{}
+                }} to={'/about'}>About Us</NavLink>
                 </li>
-
+                <NavLink to={'/products'}>
                 <button className='sign'>
                     Buy Now
                 </button>
+                </NavLink>
 
             </ul>
         </nav>
