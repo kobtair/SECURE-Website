@@ -1,0 +1,78 @@
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+.about-title {
+    
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 63px;
+    margin-bottom: 20px;
+    color: #343232;
+    white-space: nowrap;
+  }
+  h2{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: px;
+    line-height: 63px;
+    margin-bottom: 20px;
+    color: #343232;
+    white-space: nowrap;
+  }
+  
+  .career-para {
+
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  
+  .job-listings {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .job {
+    margin-bottom: 24px;
+    box-shadow: 0 2px 6px rgba(11, 70, 45, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .job h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 16px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 15px;
+  white-space: nowrap;
+  color: white;
+  width: 120px;
+  height: 42px;
+
+
+
+
+  background: #8CB561;
+  border-radius: 7px;
+  }
+  
+  .btn:hover {
+  background-color: #759751;
+  }
+  

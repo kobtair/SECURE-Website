@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export default function NotFound() {
   return (
-    <div className='lg:ml-5 mt-4'>
+    <div className=' animate__animated animate__fadeIn lg:ml-5 mt-4'>
         <section className="page_404">
 	<div className="container">
 		<div className="row">	

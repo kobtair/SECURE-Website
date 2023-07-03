@@ -1,0 +1,40 @@
+.blogs {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  .blogs-title {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 63px;
+    color: #343232;
+    white-space: nowrap;
+    margin-bottom: 8px;
+  }
+  
+  .blog {
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(11, 70, 45, 0.9);
+    padding: 24px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  .blog-meta {
+    color: #888888;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  
+  .blog-content {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  

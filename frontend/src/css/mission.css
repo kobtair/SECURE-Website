@@ -19,12 +19,24 @@
 
 }
 .video{
-    height: 35vw;
-    width: 62.2vw;
+    height: 13.5rem;
+    width: 24rem;
 }
 @media(max-width:1000px)
 {
     .mission-title{
         font-size: 40px;
+    }
+}
+@media(min-width:500px){
+    .video{
+        height: 18.9rem;
+        width: 33.6rem;
+    }
+}
+@media(min-width:800px){
+    .video{
+        height: 27rem;
+        width: 48rem;
     }
 }

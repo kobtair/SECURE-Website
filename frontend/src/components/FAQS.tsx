@@ -4,12 +4,17 @@ import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import ScrollAnimation from 'react-animate-on-scroll';
+
 function FAQS() {
   return (
     <div className='faqs flex flex-col items-center '>
+      <ScrollAnimation animateIn='fadeInUp' animateOnce={true}>
       <div className='flex'>
         <div className='products-title'>FAQ's</div>
       </div>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn='fadeInRight' animateOnce={true}>
       <div className="pt-16 ">
       <Accordion  >
         <AccordionSummary
@@ -48,6 +53,7 @@ function FAQS() {
         </AccordionDetails>
       </Accordion>
       </div>
+      </ScrollAnimation>
       </div>
   );
 }

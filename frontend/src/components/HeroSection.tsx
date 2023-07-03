@@ -1,10 +1,11 @@
-
 import '../css/heroSection.css'
 import Typewriter from 'typewriter-effect'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 
 export default function HeroSection() {
-  return (<div className='flex flex-col items-center gap-16 lg:justify-center lg:flex-row hero pt-4 flex-wrap'>
+  return (<div className=' animate__animated animate__fadeIn  flex flex-col items-center gap-16 lg:justify-center lg:flex-row hero pt-4 flex-wrap'>
+    
     <div className=" hero-left pt-8 flex flex-col ml-3   ">
       <div>
         <div className=' hero-title pt-20'>MAKING LIVES

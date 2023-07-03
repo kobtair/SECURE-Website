@@ -2,6 +2,7 @@
     margin-top: 9rem;
     height: auto;
     width: 100%;
+    padding-inline:11vw ;
 
 }
 
@@ -32,14 +33,6 @@
     cursor: pointer;
 }
 
-.image {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    max-width: 100%;
-    max-height: 100%;
-
-}
 
 .product-name {
     font-family: 'Inter', sans-serif;
@@ -53,6 +46,30 @@
     color: #393939;
 }
 
+.sign-prod {
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-bottom: 3px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 15px;
+    line-height: 15px;
+    white-space: nowrap;
+    color: white;
+    width: 120px;
+    height: 42px;
+  
+  
+  
+  
+    background: #8CB561;
+    border-radius: 7px;
+  }
+  
+  .sign-prod:hover {
+    background-color: #759751;
+  }
 .prod-desc {
     font-family: 'Inter', sans-serif;
     font-style: normal;

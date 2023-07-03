@@ -31,12 +31,6 @@
 
 }
 
-.step-2{
-    position: relative;
-    right: 80px;
-    bottom: 150px;
-}
-
 .steps-text {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -53,7 +47,7 @@
   .mission .steps{
         
         background-image: url('/how it works vertical.png');
-        height: 800px;
+        height: 830px;
         width: 250px;
     }
     .mission .title {
@@ -61,5 +55,5 @@
     }
     .steps-text{
         font-size: 16px;
-    }
+    } 
 }
