@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/about.css'
 import { useState, useEffect } from 'react';
 
-const Careers = () => {
+const CareersList = () => {
 
   const [careers, setCareers] = useState([]);
   useEffect(() => {
@@ -30,7 +30,7 @@ const Careers = () => {
           <h2>{career.title}</h2>
           <p className='career-para'>{career.description} <br /> Requirements <br /><ul> {career.requirements.map(requirement=>(<li>{requirement}</li>))}</ul></p>
 
-          <a href="/apply/software-engineer" className="btn">Apply Now</a>
+          <a href={career.link} className="btn">Apply Now</a>
         </div>
        ) )} 
       </div>
@@ -38,4 +38,4 @@ const Careers = () => {
   );
 };
 
-export default Careers;
+export default CareersList;

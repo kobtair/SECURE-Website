@@ -1,4 +1,5 @@
 import '../css/footer.css'
+import {Link} from 'react-router-dom'
 import { LinkedIn, Facebook, Twitter, Instagram } from '@mui/icons-material/';
 
 export default function Footer() {
@@ -13,17 +14,17 @@ export default function Footer() {
           
             <div className="offices  whitespace-nowrap"><h3>Offices</h3><br /><p>Lalkurti, Rawalpindi, Punjab,</p><p>Pakistan</p></div>
             <div className="links"><h3>Links</h3><br />
-              <p>Contact us</p>
-              <p>FAQ</p>
-              <p>Privacy</p>
-              <p className=' whitespace-nowrap'>Schedule of Charges</p>
-              <p className=' whitespace-nowrap'>Term & conditions</p>
-              <p className=' whitespace-nowrap'>Complaints & Disputes</p>
+             <Link to={'/contact'}> <p className='hover:underline'>Contact us</p></Link>
+             <Link to={'/faqs'}><p className='hover:underline'>FAQS</p></Link>
+             <Link to={'/privacy'}><p className='hover:underline'>Privacy</p></Link>
+             <Link to={'/scheduleofcharges'}><p className=' whitespace-nowrap hover:underline'>Schedule of Charges</p></Link>
+             <Link to={'/termsandconditions'}><p className=' whitespace-nowrap hover:underline'>Term & conditions</p></Link>
+             <Link to={'/complaintsanddisputes'}><p className=' whitespace-nowrap hover:underline'>Complaints & Disputes</p></Link>
             </div>
-            <div className="follow-us"><h3>Follow Us</h3><br /><div className='flex gap-3'><a href="www.instagram.com"><Instagram /></a><a href="www.facebook.com"><Facebook /></a><a href="www.linkedin.com"><LinkedIn /></a><a href="www.twitter.com"><Twitter /></a></div>
+            <div className="follow-us"><h3>Follow Us</h3><br /><div className='flex gap-3'><a href="https://www.instagram.com/secure_yourlives/"><Instagram /></a><a href="https://www.facebook.com/profile.php?id=100088155865163"><Facebook /></a><a href="https://www.linkedin.com/company/7secure-tech/"><LinkedIn /></a><a href="https://www.twitter.com"><Twitter /></a></div>
               <br /><br />
-              <div  ><img className='store' src="store1.png" alt="store 1" />
-                <img className='store mt-2' src="store2.png" alt="store 2" />
+              <div  ><img className='store cursor-pointer' src="store1.png" alt="store 1" />
+                <img className='store mt-2 cursor-pointer' src="store2.png" alt="store 2" />
               </div>
             </div>
           </div>

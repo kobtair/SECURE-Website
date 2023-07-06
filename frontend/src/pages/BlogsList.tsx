@@ -1,9 +1,10 @@
 import React from 'react';
 import '../css/blogs.css';
 import {useState, useEffect} from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const Blogs = () => {
-  
+  const navigate= useNavigate();
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     // Fetch blogs from the backend API
@@ -23,7 +24,7 @@ const Blogs = () => {
     <div className=" animate__animated animate__fadeIn blogs">
       <h1 className='text-center blogs-title'>Blogs</h1>
       {blogs.map(blog => (
-        <div className="blog cursor-pointer "  key={blog._id}>
+        <div onClick={()=>navigate(`/blogs/${blog._id}`)} className="blog cursor-pointer "  key={blog._id}>
           <h2 className='whitespace-normal hover:underline'>{blog.title}</h2>
           <p className="blog-meta">{blog.publishedAt} | By {blog.author}</p>
           <p className="blog-content">{blog.content}</p>

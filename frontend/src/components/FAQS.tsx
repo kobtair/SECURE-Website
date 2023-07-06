@@ -25,7 +25,7 @@ function FAQS() {
           <Typography className='typography'><strong>Why are we doing this?</strong></Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography className='typography answer'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quod rem adipisci eius cupiditate aut veritatis possimus repudiandae totam debitis esse, saepe nostrum reprehenderit iure, officia nam libero quasi. Sit.</Typography>
+          <Typography className='typography answer'>At Secure, our mission is to enhance safety and provide peace of mind to individuals and communities. We believe in leveraging advanced technology to develop innovative solutions that can make a positive impact. By creating accident detection system devices, we aim to address the critical issue of timely response during accidents and improve overall safety standards. We strive to minimize the consequences of accidents and save lives by providing quick and accurate detection and notification capabilities.</Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion>
@@ -37,7 +37,7 @@ function FAQS() {
           <Typography className='typography'><strong>Does it give false alarms?</strong></Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography className='typography answer'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam illo libero et corporis ipsam nisi voluptas voluptatum doloribus tenetur ullam consequuntur provident, doloremque, ratione dolores adipisci ab nesciunt neque laborum.</Typography>
+          <Typography className='typography answer'>We understand the importance of reliable and accurate accident detection systems. Our devices are built using advanced algorithms and sensors to minimize false alarms while maintaining high detection accuracy. We continuously refine our technology through rigorous testing and analysis to ensure that our system delivers reliable results. By leveraging sophisticated machine learning algorithms and intelligent data analysis, we aim to achieve a high level of precision in detecting real accidents while reducing the occurrence of false alarms.</Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion>
@@ -49,7 +49,7 @@ function FAQS() {
           <Typography className='typography'><strong>How much is the product going to cost?</strong></Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography className='typography answer'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam illo libero et corporis ipsam nisi voluptas voluptatum doloribus tenetur ullam consequuntur provident, doloremque, ratione dolores adipisci ab nesciunt neque laborum.</Typography>
+          <Typography className='typography answer'>The pricing of our accident detection system devices can vary based on several factors, such as the specific product model, features, and additional services required. We offer a range of options to suit various needs and budgets. To get accurate pricing details, we encourage you to reach out to our sales team or check the products section. Our team will be happy to provide you with a tailored solution and discuss pricing options based on your specific requirements and the scale of deployment. We prioritize transparency and strive to offer competitive pricing while delivering exceptional value and reliability in our products and services.</Typography>
         </AccordionDetails>
       </Accordion>
       </div>

@@ -1,0 +1,39 @@
+.blog-article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .navigation {
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  .navigation-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+  }
+  
+  .navigation-item {
+    padding: 5px;
+  }
+  
+  .title {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .metadata {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+  }
+  
+  .content {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Additional styling can be added as per your design requirements */
+  

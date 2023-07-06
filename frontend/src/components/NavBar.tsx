@@ -3,7 +3,7 @@ import {NavLink} from 'react-router-dom';
 import {
     Drawer, ListItem,
     ListItemText,
-    Button,
+    Button, Divider,
 } from '@mui/material'
 import { Close} from '@mui/icons-material/';
 import '../css/navbar.css'
@@ -38,7 +38,7 @@ export default function NavBar() {
                         color: 'rgba(11, 70, 45, 0.9)',
                         cursor: 'pointer',
                     }} primary={item.name} />
-                </ListItem></NavLink>
+                </ListItem> <Divider /></NavLink> 
 
             ))}
             <Button style={{
@@ -62,7 +62,7 @@ export default function NavBar() {
     );
     return (
 
-        <nav className='navbar flex items-center gap-6  '>
+        <nav className='navbar sticky top-0  z-50 flex items-center gap-6  '>
             <div className='drawer'>
                 <Button style={{display:'block', paddingBottom:'13px'}} onClick={() => setOpen(true)}>
                     <div className='bar'></div>
