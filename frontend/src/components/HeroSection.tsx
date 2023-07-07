@@ -1,7 +1,6 @@
 import '../css/heroSection.css'
 import Typewriter from 'typewriter-effect'
-import ScrollAnimation from 'react-animate-on-scroll'
-
+import { Link } from 'react-router-dom';
 
 export default function HeroSection() {
   return (<div className=' animate__animated animate__fadeIn  flex flex-col items-center gap-16 lg:justify-center lg:flex-row hero pt-4 flex-wrap'>
@@ -30,12 +29,14 @@ export default function HeroSection() {
         The Ultimate Accident Detection Device<br />
         for Bikers</div>
       <div className=' buttons'>
-        <button className='main'>
+      <Link to={'/products'}><button className='main'>
           Buy Now
-        </button >
-        <button className='ghost'>
+        </button ></Link>
+        <Link to={'/about'}><button className='ghost'>
           Learn More
-        </button></div>
+        </button>
+        </Link>
+        </div>
     </div>
       <img className='hero-img' src="hero1.png" alt="hero" loading='lazy' />
 

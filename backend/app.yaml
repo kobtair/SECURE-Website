@@ -1,0 +1,8 @@
+runtime: nodejs14
+
+handlers:
+- url: /.*
+  script: auto
+
+env_variables:
+  MONGODB_URI: "mongodb+srv://aaqibimran0:Test786@secureweb.onauyzx.mongodb.net/?retryWrites=true&w=majority"

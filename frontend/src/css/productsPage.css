@@ -1,7 +1,4 @@
-.productspage {
-    max-width: 800px;
-    margin: 0 auto;
-  }
+
   
   .heading1 {
     font-family: 'Inter', sans-serif;
@@ -83,5 +80,11 @@
     100% {
       transform: translateX(100%);
     }
+  }
+  @media(max-width=500px){
+    .product-image{
+      width: 300px;
+    }
+    
   }
   

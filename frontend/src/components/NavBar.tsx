@@ -41,7 +41,7 @@ export default function NavBar() {
                 </ListItem> <Divider /></NavLink> 
 
             ))}
-            <Button style={{
+            <NavLink to={'/products'}><Button style={{
                 backgroundColor: '#8CB561', marginLeft: '12px', paddingLeft: '26px',
                 paddingRight: '26px',
                 paddingBottom: '3px',
@@ -56,7 +56,7 @@ export default function NavBar() {
                 height: '42px',
                 borderRadius: '7px',
                 marginRight:'30px'
-            }} >Buy Now</Button>
+            }} >Buy Now</Button></NavLink>
 
         </div>
     );

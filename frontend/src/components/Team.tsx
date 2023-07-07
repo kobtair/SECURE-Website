@@ -79,7 +79,7 @@ export default function Team() {
               <div className="flex items-center gap-x-6">
                 <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt={person.name} />
                 <div>
-                  <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
+                  <h3 className="text-base font-semibold leading-7 tracking-tight whitespace-nowrap text-gray-900">{person.name}</h3>
                   <p className="team-role text-sm font-semibold leading-6 ">{person.role}</p>
                 </div>
               </div>

@@ -17,7 +17,7 @@ const Blogs: React.FC = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch('https://secure-website.onrender.com/blogs');
+        const response = await fetch('https://secure-392106.el.r.appspot.com/blogs');
         const data = await response.json();
         setBlogs(data);
       } catch (error) {
