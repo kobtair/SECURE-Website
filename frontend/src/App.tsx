@@ -1,5 +1,4 @@
 import './App.css'
-import {useState, useEffect} from 'react';
 import NavBar from './components/NavBar'
 import {Routes, Route} from 'react-router-dom'
 import Home from './pages/Home'
@@ -20,21 +19,6 @@ import Blog from './pages/Blog'
 
 
 function App() {
-  const [blogs, setBlogs] = useState([]);
-  useEffect(() => {
-    // Fetch blogs from the backend API
-    const fetchBlogs = async () => {
-      try {
-        const response = await fetch('http://localhost:3000/blogs');
-        const data = await response.json();
-        setBlogs(data);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
-    fetchBlogs();
-  }, []);
 
   return (
     <>

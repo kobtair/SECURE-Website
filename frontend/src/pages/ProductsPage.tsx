@@ -3,6 +3,8 @@ import '../css/productsPage.css'
 import { useNavigate } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+import { Helmet } from 'react-helmet';
+
 
 const Products = () => {
 
@@ -13,7 +15,7 @@ const Products = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://secure-website.onrender.com/emails', {
+      const response = await fetch('https://cheerful-hat-deer.cyclic.app/emails', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -41,6 +43,10 @@ const Products = () => {
   };
   return (
     <div className="  animate__animated animate__fadeIn productspage flex flex-col items-center">
+      <Helmet>
+        <title>Accident Detection System</title>
+        <meta name="description" content="Explore the accident detection system device designed to provide real-time monitoring and immediate alerts for enhanced road safety." />
+      </Helmet>
         
       <h1 className='heading1 mt-5 '>Products</h1>
       <div className="productpage flex flex-wrap justify-center ">
@@ -49,8 +55,11 @@ const Products = () => {
         </div>
         <div className=' flex flex-col pl-5 items-center w-full lg:w-96  '>
         <h2 className='heading2'>Accident Detection System</h2>
-        <p className="  w-80 lg:w-auto pl-1 product-description">Introducing our advanced Accident Detection System Device - your ultimate road safety companion. With cutting-edge sensors and AI algorithms, it swiftly identifies accidents, alerting emergency services instantly. Compact and stylish, it seamlessly integrates into your vehicle.
-         Gain valuable insights into your driving habits and become a safer driver. Drive confidently with our reliable guardian by your side.
+        <p className="  w-96 lg:w-auto pl-1 product-description">Introducing our Advanced Accident Detection System Device - your partner for a safer driving experience.
+The design of this device is compact and lightweight, ensuring that it integrates effortlessly into your vehicle. 
+ Equipped with smart sensors, it promptly detects accidents and alerts emergency services. Plus, it offers regular safety reminders for bikers too – an all-round road safety champion.
+Drive with increased confidence, knowing that lives can be saved.
+
          </p>
          <form onSubmit={handleSubmit} className='waitlist-form lg:flex lg:flex-nowrap lg:items-center'>
        <Box

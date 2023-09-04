@@ -26,8 +26,8 @@ export default function NavBar() {
         <div style={{ width: 250, paddingTop:'50px', display:'flex', flexDirection:'column', alignItems:'center' }} onClick={() => setOpen(false)}>
             <Close className=' self-end mr-11' />
             {data.map((item, index) => (
-                <NavLink to={item.link}>
-                <ListItem key={index}>
+                <NavLink key={index} to={item.link}>
+                <ListItem >
                     <ListItemText style={{
                         fontFamily: 'Inter, sans-serif',
                         fontStyle: 'normal',

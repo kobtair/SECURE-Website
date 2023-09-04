@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import {Helmet} from 'react-helmet';
 import '../css/about.css';
+import Stack from '@mui/material/Stack';
+import CircularProgress from '@mui/material/CircularProgress';
 
 interface Career {
   title: string;
@@ -14,7 +17,7 @@ const CareersList: React.FC = () => {
   useEffect(() => {
     const fetchCareers = async () => {
       try {
-        const response = await fetch('https://secure-website.onrender.com/careers');
+        const response = await fetch('https://cheerful-hat-deer.cyclic.app/careers');
         const data = await response.json();
         setCareers(data);
       } catch (error) {
@@ -27,10 +30,14 @@ const CareersList: React.FC = () => {
 
   return (
     <div className="animate__animated animate__fadeIn page">
+      <Helmet>
+        <title>Careers</title>
+        <meta name="description" content="Explore career opportunities at our startup. Join us in making a difference with our accident detection system devices." />
+      </Helmet>
       <h1 className="text-center about-title">Careers</h1>
       <p className="career-para">Join us in making lives secure. We are always looking for talented individuals who are passionate about our mission.</p>
       <div className="job-listings">
-        {careers.map((career) => (
+        {careers.length!==0? careers.map((career) => (
           <div className="job" key={career.title}>
             <h2>{career.title}</h2>
             <p className="career-para">
@@ -45,7 +52,9 @@ const CareersList: React.FC = () => {
               Apply Now
             </a>
           </div>
-        ))}
+        )) : <div className=' mt-24 flex justify-center'> <Stack sx={{ color: 'grey.500' }} spacing={2} direction="row">
+        <CircularProgress color="success" />
+      </Stack></div> }
       </div>
     </div>
   );

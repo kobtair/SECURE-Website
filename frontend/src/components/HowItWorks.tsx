@@ -27,9 +27,9 @@ export default function Mission() {
         </ScrollAnimation>
         <ScrollAnimation animateIn='fadeInLeft' duration={0.7} animateOnce={true}> 
         <div className=' relative bottom-11 left-8 lg:bottom-0 lg:top-2 lg:left-0'>
-        <img className='relative top-11 right-5'  src='/step3.png' alt='step 3' style={{ height: '140px', width: '210px' }} />
+        <img className='relative top-11 right-5'  src='/step3.png' alt='step 3' style={{ height: '130px', width: '210px' }} />
           
-          <div className='steps-text ml-7 lg:mr-24 mt-16'>Ride Safe</div>
+          <div className='steps-text ml-7 lg:mr-24 mt-20'>Ride Safe</div>
         </div>
         </ScrollAnimation>
       </div>

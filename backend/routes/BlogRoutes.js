@@ -13,12 +13,12 @@ router.get('/blogs', async (req, res) => {
   }
 });
 
-// GET /blogs/:id - Get a specific blog
-router.get('/blogs/:id', async (req, res) => {
-  const { id } = req.params;
+// GET /blogs/:param_id - Get a specific blog by param_id
+router.get('/blogs/:param_id', async (req, res) => {
+  const { param_id } = req.params;
 
   try {
-    const blog = await Blog.findById(id);
+    const blog = await Blog.findOne({ param_id }); // Use findOne to search by param_id
     if (!blog) {
       return res.status(404).json({ message: 'Blog not found' });
     }

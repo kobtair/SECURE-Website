@@ -5,10 +5,15 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import '../css/about.css'
+import { Helmet } from 'react-helmet';
 
 const About = () => {
   return (
     <div className=" animate__animated animate__fadeIn page">
+      <Helmet>
+      <title>About Us</title>
+        <meta name="description" content="Discover more about our startup and our mission to develop innovative accident detection system devices for improved road safety." />
+      </Helmet>
       <h1 className=' text-center about-title'>About Us</h1>
       <p>At SECURE, we are dedicated to making lives secure through our advanced accident detection system devices. Our motto is "Making Lives Secure" because we believe that everyone deserves to feel safe on the road.</p>
       <p>With our cutting-edge technology and commitment to innovation, we aim to provide the best possible safety solutions to our customers. Our team of experts works tirelessly to develop and improve our devices, ensuring the highest level of reliability and accuracy.</p>

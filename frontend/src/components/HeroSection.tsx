@@ -3,7 +3,7 @@ import Typewriter from 'typewriter-effect'
 import { Link } from 'react-router-dom';
 
 export default function HeroSection() {
-  return (<div className=' animate__animated animate__fadeIn  flex flex-col items-center gap-16 lg:justify-center lg:flex-row hero pt-4 flex-wrap'>
+  return (<div className=' animate__animated animate__fadeIn   flex gap-x-20 items-center gap-16 lg:justify-center lg:flex-row hero pt-4 flex-wrap'>
     
     <div className=" hero-left pt-8 flex flex-col ml-3   ">
       <div>
@@ -23,11 +23,13 @@ export default function HeroSection() {
       .pauseFor(1300)
       .deleteAll()
       .start();
+      typewriter.typeString('CONFIDENT')
+      .pauseFor(1300)
+      .deleteAll()
+      .start();
   }}
 /></div></div>
-      <div className=' mt-5 para  '>Stay Protected with Secure<br />
-        The Ultimate Accident Detection Device<br />
-        for Bikers</div>
+      <h1 className=' mt-5 para  '>Revolutionizing Bike Safety <br /> with Accident Detection System</h1>
       <div className=' buttons'>
       <Link to={'/products'}><button className='main'>
           Buy Now
