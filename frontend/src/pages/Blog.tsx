@@ -37,7 +37,7 @@ const Blog: React.FC = () => {
   useEffect(() => {
     const fetchArticle = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/blogs/${id}`);
+        const response = await fetch(`https://cheerful-hat-deer.cyclic.app/blogs/${id}`);
         const data = await response.json();
 
         if (response.ok) {

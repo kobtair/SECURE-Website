@@ -42,7 +42,7 @@ const Products = () => {
     setEmail(e.target.value);
   };
   return (
-    <div className="  animate__animated animate__fadeIn productspage flex flex-col items-center">
+    <div className=" pr-5 animate__animated animate__fadeIn productspage flex flex-col items-center">
       <Helmet>
         <title>Accident Detection System</title>
         <meta name="description" content="Explore the accident detection system device designed to provide real-time monitoring and immediate alerts for enhanced road safety." />
@@ -50,12 +50,12 @@ const Products = () => {
         
       <h1 className='heading1 mt-5 '>Products</h1>
       <div className="productpage flex flex-wrap justify-center ">
-        <div className='w-80' >
-        <img src="product.png" alt="Product" className="product-image" />
+        <div className='w-full lg:w-80' >
+        <img className='product-image max-w-full max-h-full ' src="product.png" alt="Product" />
         </div>
         <div className=' flex flex-col pl-5 items-center w-full lg:w-96  '>
         <h2 className='heading2'>Accident Detection System</h2>
-        <p className="  w-96 lg:w-auto pl-1 product-description">Introducing our Advanced Accident Detection System Device - your partner for a safer driving experience.
+        <p className="  w-auto pl-1 product-description">Introducing our Advanced Accident Detection System Device - your partner for a safer driving experience.
 The design of this device is compact and lightweight, ensuring that it integrates effortlessly into your vehicle. 
  Equipped with smart sensors, it promptly detects accidents and alerts emergency services. Plus, it offers regular safety reminders for bikers too – an all-round road safety champion.
 Drive with increased confidence, knowing that lives can be saved.

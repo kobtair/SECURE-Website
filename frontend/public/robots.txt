@@ -1,2 +1,3 @@
 User-agent: *
-Disallow:
+Disallow: /private/
+Sitemap: https://thesecure.site/sitemap.xml

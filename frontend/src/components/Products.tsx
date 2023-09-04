@@ -19,11 +19,11 @@ export default function Products() {
           <ScrollAnimation animateIn='fadeInRight' duration={0.7} animateOnce={true} >
           <div>
         <div className='product-name'>Accident Detection System</div>
-          <div className="prod-desc mt-2 xl:mt-1">Introducing our Advanced Accident Detection System Device - your partner for a safer driving experience.
+          <p className="prod-desc mt-2 xl:mt-1">Introducing our Advanced Accident Detection System Device - your partner for a safer driving experience.
 The design of this device is compact and lightweight, ensuring that it integrates effortlessly into your vehicle. Its discreet monitoring adds an extra layer of protection without interfering with your driving comfort.
 Our device doesn't just observe, it acts. Equipped with smart sensors, it promptly detects accidents and alerts emergency services. Plus, it offers regular safety reminders for bikers too – an all-round road safety champion.
 Drive with increased confidence, knowing that lives can be saved.
-</div>
+</p>
           <NavLink to={'/products'}>
                 <button className='sign-prod mt-3 xl:mt-2'>
                     Buy Now
